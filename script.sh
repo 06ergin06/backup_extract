@@ -2,7 +2,7 @@
 
 echo "Backup Script"
 
-read -p "Klasör yolunu girin: " folder_path
+read -p "Enter folder path: " folder_path
 
 day=$(date +%d)
 year=$(date +%Y)
