@@ -4,41 +4,48 @@ A simple Bash script that automatically backs up a specified folder in tar forma
 
 ## Features
 
-- Prompts user for folder path
-- Automatically adds date and time stamp
-- Creates compressed backup file in TAR format
-- Simple and easy-to-use interface
+- **User Input**: Prompts user for folder path
+- **Date/Time Stamp**: Automatically adds date and time stamp to backup files
+- **TAR Compression**: Creates compressed backup file in TAR format
+- **Simple Interface**: Easy-to-use command-line interface
 
 ## Installation
 
-1. Clone or download the repository
-2. Make the script executable:
+### Download the Script
+
+You can download the script directly using `curl` or `wget`:
+
 ```bash
-chmod +x script.sh
+# Using curl
+curl -O https://raw.githubusercontent.com/06ergin06/backup_extract/main/script.sh
+
+# Using wget
+wget https://raw.githubusercontent.com/06ergin06/backup_extract/main/script.sh
+
+# Or clone the entire repository
+git clone https://github.com/06ergin06/backup_extract.git
+cd backup_extract
 ```
 
 ## Usage
 
-### Running the Script
+Make the script executable and run it:
 
 ```bash
+chmod +x script.sh
 ./script.sh
 ```
 
-### Step-by-Step Usage
+## Sample Output
 
-1. When you run the script, you'll be prompted to enter the path of the folder you want to backup
-2. After entering the folder path, the script will automatically start the backup process
-3. The backup file will be created in the format `backup_DD-YYYY-HHMMSS.tar`
-
-### Example Usage
-
-```bash
-$ ./script.sh
+```text
 Backup Script
-Klasör yolunu girin: /home/user/documents
+Enter folder path: /home/user/documents
 backup_17-2025-160500
-... (tar output)
+tar: Removing leading `/' from member names
+/home/user/documents/
+/home/user/documents/file1.txt
+/home/user/documents/file2.pdf
 ```
 
 ## File Naming
