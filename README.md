@@ -5,6 +5,9 @@ A simple Bash script that automatically backs up a specified folder in tar forma
 ## Features
 
 - **User Input**: Prompts user for folder path
+/home/user/documents/file1.txt
+/home/user/documents/file2.pdf
+
 - **Date/Time Stamp**: Automatically adds date and time stamp to backup files
 - **TAR Compression**: Creates compressed backup file in TAR format
 - **Simple Interface**: Easy-to-use command-line interface
@@ -39,13 +42,11 @@ chmod +x script.sh
 ## Sample Output
 
 ```text
+./script.sh
 Backup Script
 Enter folder path: /home/user/documents
-backup_17-2025-160500
+Backup file : /home/user/backup_bash/backup_17-2025-163011
 tar: Removing leading `/' from member names
-/home/user/documents/
-/home/user/documents/file1.txt
-/home/user/documents/file2.pdf
 ```
 
 ## File Naming
