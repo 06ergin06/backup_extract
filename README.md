@@ -18,14 +18,14 @@ You can download the script directly using `curl` or `wget`:
 
 ```bash
 # Using curl
-curl -O https://raw.githubusercontent.com/06ergin06/backup_extract/main/script.sh
+curl -O https://raw.githubusercontent.com/06ergin06/tarbackup/main/script.sh
 
 # Using wget
-wget https://raw.githubusercontent.com/06ergin06/backup_extract/main/script.sh
+wget https://raw.githubusercontent.com/06ergin06/tarbackup/main/script.sh
 
 # Or clone the entire repository
-git clone https://github.com/06ergin06/backup_extract.git
-cd backup_extract
+git clone https://github.com/06ergin06/tarbackup.git
+cd tarbackup
 ```
 
 ## Usage
