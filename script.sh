@@ -1,14 +1,17 @@
 #!/bin/bash
 
-echo "Backup Script"
+echo "Welcome to Backup Script"
 
-read -p "Enter folder path: " folder_path
+SOURCE_DIR=$1
+BACKUP_ROOT_DIR=$2
 
 day=$(date +%d)
 year=$(date +%Y)
 time=$(date +%H%M%S)
 
 backup_file_name="backup_$day-$year-$time"
-echo "Backup file : $(pwd)/$backup_file_name"
+echo "Backup file : $(pwd)/$backup_file_name.tar.gz"
 
-tar -cf "${backup_file_name}.tar" $folder_path
+tar -czf "${backup_file_name}.tar.gz" "$SOURCE_DIR"
+
+echo "Backup finished."

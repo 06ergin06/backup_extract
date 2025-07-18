@@ -1,15 +1,12 @@
 # Backup Script
 
-A simple Bash script that automatically backs up a specified folder in tar format.
+A simple Bash script that automatically backs up a specified folder in tar.gz format using command-line arguments.
 
 ## Features
 
-- **User Input**: Prompts user for folder path
-/home/user/documents/file1.txt
-/home/user/documents/file2.pdf
-
+- **Command-line Arguments**: Takes source directory as argument
 - **Date/Time Stamp**: Automatically adds date and time stamp to backup files
-- **TAR Compression**: Creates compressed backup file in TAR format
+- **GZIP Compression**: Creates compressed backup file in TAR.GZ format
 - **Simple Interface**: Easy-to-use command-line interface
 
 ## Installation
@@ -32,26 +29,25 @@ cd backup_extract
 
 ## Usage
 
-Make the script executable and run it:
+Make the script executable and run it with the source directory as an argument:
 
 ```bash
 chmod +x script.sh
-./script.sh
+./script.sh /path/to/source/directory
 ```
 
 ## Sample Output
 
 ```text
-./script.sh
-Backup Script
-Enter folder path: /home/user/documents
-Backup file : /home/user/backup_bash/backup_17-2025-163011
-tar: Removing leading `/' from member names
+./script.sh /home/user/documents
+Welcome to Backup Script
+Backup file : /home/user/backup_bash/backup_18-2025-163011.tar.gz
+Backup finished.
 ```
 
 ## File Naming
 
 Backup files are named in the following format:
 
-- `backup_[DAY]-[YEAR]-[HOUR][MINUTE][SECOND].tar`
-- Example: `backup_17-2025-160500.tar`
+- `backup_[DAY]-[YEAR]-[HOUR][MINUTE][SECOND].tar.gz`
+- Example: `backup_18-2025-163011.tar.gz`
